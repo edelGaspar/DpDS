@@ -115,9 +115,9 @@ def main():
     if includeHeader:
         header = pd.read_csv(datafile, header=0, nrows = 0).to_dict().keys()
     else:
-        header = []    
+        header = []
 
-    column_name = 'Fecha'    
+    column_name = 'Fecha'
 
     create_splits(datafile, number_lines, nlines, nfiles, includeHeader, header, outputPath, separator, measPerMinute, column_name)
     end_time = time.time()
