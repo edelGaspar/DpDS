@@ -78,8 +78,7 @@ def filter_dates(df, column_name, seg):
     df = df.drop_duplicates(subset=[column_name])
     return df
         
-def main():
-       
+def main():       
     if sys.platform == "win32":
         separator = '\\'
     else:
@@ -123,7 +122,5 @@ def main():
     end_time = time.time()
     print('Duration: ', str(end_time - start_time), 'seconds')   
 
-    
-   
 if __name__ == '__main__':
     main()
